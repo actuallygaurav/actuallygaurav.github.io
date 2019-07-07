@@ -2,16 +2,34 @@
 <html>
     <head>
         <title>Gaurav Kumar</title>
+
+        <script type="text/javascript">
+            
+            function validate() {
+                alert("validate called")
+                return false;
+            }
+        </script>
+
+
     </head>
 
     <body style="text-align: center" background="img.jpg">
         <h1>I am Gaurav</h1>
         <a href="https://www.google.com/" >Google</a> <br><br>
 
-        <label>Enter Username &nbsp; </label>
-        <input type="text" placeholder="Name"> <br><br>
+        <form action="https://www.google.com/" method="GET" onsubmit="return validate()">
 
-        <label>Enter Password &nbsp;</label>
-        <input type="password" placeholder="Password"
+            <label>Enter Username &nbsp; </label>
+            <input type="text" placeholder="Name"> <br><br>
+            
+            <label>Enter Password &nbsp;</label>
+            <input type="password" placeholder="Password">
+
+            <input type="submit" value="Enter" >
+
+        </form>
+
+        
     </body>
 </html>
